@@ -10,19 +10,20 @@ function App() {
 
   const [pizzaBuilderShow, setPizzaBuilderShow] = useState(false);
 
-  const showPizzaBuilder = () => {
+  const showPizzaBuilderHandler = () => {
+    console.log("PizzaBuilder works")
     setPizzaBuilderShow(true);
   }
 
-  const hidePizzaBuilder = () => {
+  const hidePizzaBuilderHandler = () => {
     setPizzaBuilderShow(false);
   }
 
   return (
   <Fragment>
-    {pizzaBuilderShow && <PizzaBuilder onHideBuilder={hidePizzaBuilder} />}
+    {pizzaBuilderShow && <PizzaBuilder onHideBuilder={hidePizzaBuilderHandler} />}
     <Header />
-    <MenuItems onShowPizzabuilder={showPizzaBuilder}/>
+    <MenuItems onShowPizzaBuilder={showPizzaBuilderHandler}/>
   </Fragment>
   )
     
