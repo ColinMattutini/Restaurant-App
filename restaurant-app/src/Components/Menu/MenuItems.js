@@ -1,12 +1,12 @@
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import AvailableItems from './AvailableItems.js';
 import StoreSummary from './StoreSummary.js';
 
-const MenuItems = () => {
+const MenuItems = (props) => {
     return (
         <Fragment>
             <StoreSummary />
-            <AvailableItems />
+            <AvailableItems onShowPizzaBuilder={props.onShowPizzaBuilder}/>
         </Fragment>
 
 

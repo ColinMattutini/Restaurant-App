@@ -1,6 +1,7 @@
 import Card from '../UI/Card';
 import classes from './AvailableItems.module.css';
 import MenuChoice from './MenuItem/MenuChoice';
+import React from 'react';
 
 
 const TEST_PIZZAS = [
@@ -41,6 +42,9 @@ const AvailableItems = (props) => {
     return(
     <section className={classes.meals}>
     <Card>
+        <button className={classes.button} onClick={props.onShowPizzaBuilder}>
+            Build Your Own Pizza
+        </button>
             <ul>
                {pizzasAvailable} 
             </ul>
