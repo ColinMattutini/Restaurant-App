@@ -11,23 +11,7 @@
     padding: 0;
   }
 
-  .button {
-    display: flex;
-    cursor: pointer;
-    font: inherit;
-    align-items: center;
-    justify-content: center;   
-    margin-left: 21rem;
-    padding: 1rem 3rem;
-    border-radius : 4px;
-    background-color: #facb74;
-    font-weight: bold;
-  }
-
-  .button:hover,
-  .button:active {
-    background-color: #a03405;
-  }
+  
   
   @keyframes meals-appear {
     from {

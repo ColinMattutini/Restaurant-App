@@ -43,7 +43,7 @@ const AvailableItems = (props) => {
     return(
     <section className={classes.meals}>
     <Card>
-        <PizzaBuilderButton onClick={props.onShowPizzaBuilder}/>
+        <PizzaBuilderButton onClick={props.onShowPizzaBuilder} value={"Create Your Own Pizza"}></PizzaBuilderButton>
             <ul>
                {pizzasAvailable} 
             </ul>
